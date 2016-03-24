@@ -37,6 +37,20 @@ var styles = StyleSheet.create({
   rowContainer: {
     flexDirection: 'row',
     padding: 10
+  },
+  heartBg:{
+    backgroundColor: 'transparent',
+    height: 0,
+    width: 0,
+    borderWidth: 20,
+    borderStyle: 'solid',
+    borderTopColor: 'red',
+    borderLeftColor: 'red',
+    borderRightColor: 'transparent',
+    borderBottomColor: 'transparent',
+    position: 'absolute',
+    top:0,
+    left:0,
   }
 });
 
@@ -76,6 +90,7 @@ class SearchResults extends Component {
               <Text style={styles.title} 
                     numberOfLines={1}>{rowData.title}</Text>
             </View>
+            <View style={styles.heartBg} />
           </View>
           <View style={styles.separator}/>
         </View>

@@ -79,6 +79,7 @@ function urlForQueryAndPage(key, value, pageNumber) {
     .map(key => key + '=' + encodeURIComponent(data[key]))
     .join('&');
 
+  // api documentation: http://www.nestoria.co.uk/help/api-methods
   return 'http://api.nestoria.co.uk/api?' + querystring;
 };
 
